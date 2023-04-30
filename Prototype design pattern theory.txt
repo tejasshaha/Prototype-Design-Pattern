@@ -1,0 +1,18 @@
+Task - Need to create clone object of student object.
+
+1. Shallow copy
+- Student student= new Student(1,"Tejas")
+- Student cloneObject=student;
+
+Here if we change in student object or cloneStudent object it will affect in both which is not a good practice.
+
+2. Deep copy
+
+- Create 1 interface StudentPrototype with method createStudent
+- This createStudent method will call constructor of Student
+- From main we can call this method.
+Eg- Student cloneStudent = student.createStudent();
+
+- If we change student or cloneStudent object it will change that object only.
+
+** Here Prototype design pattern comes under creational design pattern as it deals with creation of objects.
